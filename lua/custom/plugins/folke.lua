@@ -1,6 +1,6 @@
 return {
-  "folke/flash.nvim",
-  event = "VeryLazy",
+  'folke/flash.nvim',
+  event = 'VeryLazy',
   ---@type Flash.Config
   opts = {},
   -- stylua: ignore
@@ -12,18 +12,15 @@ return {
   { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
 },
 
-
-{
-  "folke/todo-comments.nvim",
-  dependencies = { "nvim-lua/plenary.nvim" },
-  opts = {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- NOTE: https://github.com/folke/todo-comments.nvim#%EF%B8%8F-configuration
+  {
+    'folke/todo-comments.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- NOTE: https://github.com/folke/todo-comments.nvim#%EF%B8%8F-configuration
+    },
   },
 }
 
-}
-
-  -- NOTE: Try this: https://github.com/akinsho/toggleterm.nvim
-
+-- NOTE: Try this: https://github.com/akinsho/toggleterm.nvim
